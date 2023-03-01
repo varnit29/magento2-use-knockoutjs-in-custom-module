@@ -1,0 +1,18 @@
+<div id="custom-component" data-bind="scope:'customcomponent'">
+ <!-- ko template: getTemplate() --><!-- /ko -->
+     <h1>Hi</h1>
+
+    <script type="text/x-magento-init">
+    {
+        "#custom-component": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "customcomponent": {
+                        "component": "UseKnockoutjs_Knock/js/custom-component"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>
